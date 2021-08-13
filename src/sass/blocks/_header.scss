@@ -1,0 +1,26 @@
+.header{
+    height: 50px;
+    padding-top: 3px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__desc{
+        font-family: "Proxima Nova Semibold";
+        margin-left: 25px;
+        font-size: 14px;
+        span{
+            font-family: "Proxima Nova Bold";
+            color: #0072BA;
+        }
+    }
+    &__divider{
+        margin-left: 26px;
+        height: 45px;
+        width: 2px;
+        background-color: $main_color;
+    }
+    &__buttons{
+        margin-left: 40px;
+    }
+}

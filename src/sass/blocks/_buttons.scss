@@ -1,0 +1,35 @@
+.btn{
+    width: 280px;
+    height: 66px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(8,133,216,1) 0%, rgba(3,76,136,1) 100%);
+    border-radius: 5px;
+    box-shadow: 5px 6px 20px #000;
+    transition: 0.3s all;
+    &:hover{
+        box-shadow: 5px 6px 30px #000;
+    }
+    &__small{
+        width: 23px;
+        height: 21px;
+        font-family: "Proxima Nova Semibold";
+        font-size: 12px;
+        color: $main_color;
+        border: 1px solid $main_color;
+        border-radius: 4px;
+        background-color: #fff;
+        transition: 0.2s all;   
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    &__active{
+        background-color: $main_color;
+        color: #fff;
+    }
+}

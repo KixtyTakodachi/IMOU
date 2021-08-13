@@ -1,0 +1,41 @@
+.problems{
+    background: linear-gradient(0deg, rgba(0,59,110,1) 0%, rgba(0,112,186,1) 100%);
+    padding: 46px 0 72px 0;
+    &__title{
+        font-family: "Proxima Nova Semibold";
+        font-size: 36px;
+        color: #fff;
+    }
+    &__wrapper{
+        margin-top: 74px;
+        display: grid;
+        grid-template: repeat(2, minmax(124px, auto)) / repeat(2, 430px);
+        grid-auto-rows: minmax(124px, auto);
+        column-gap: 107px;
+        row-gap: 80px;
+        justify-content: center;
+    }
+    &__item{
+        display: flex;
+        &__title{
+            font-family: "Proxima Nova Semibold";
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 20px;
+        }
+        &__desc{
+            margin-top: 12px;
+            font-size: 12px;
+            color: #fff;
+            line-height: 15px;
+        }
+    }
+    &__img{
+        width: 124px;
+        height: 124px;
+    }
+    &__text{
+        margin-left: 35px;
+    }
+}
