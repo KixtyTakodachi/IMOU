@@ -1,0 +1,458 @@
+@media(max-width: 1800px){
+    .cameras{
+        &__wrapper{
+            @include flex-direction(column);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header{
+        &__logo{
+            width: 120px;
+        }
+        &__btn{
+            width: 17px;
+            line-height: 15px;
+        }
+    }
+    .promo{
+        background: url(../img/promo_bg.jpg) 25% center/cover no-repeat;
+        &__btn{
+            width: 250px;
+            font-size: 1vw;
+        }
+    }
+    .title{
+        font-size: 3vw;
+    }
+    .steps{
+        &__wrapper{
+            justify-content: space-between;
+        }
+        &__item{
+            padding: 100px 12px 60px 12px;
+            min-height: 230px;
+            width: 167px;
+            &__number{
+                font-size: 3vw;
+                height: 50px;
+            }
+        }
+        &__info{
+            font-size: 1vw;
+            margin: 0;
+            margin-top: 37px;
+        }
+    }
+    .problems{
+        &__wrapper{
+            margin-top: 50px;
+            grid-template: repeat(2,minmax(124px,auto))/repeat(2,auto);
+            column-gap: 30px;
+            row-gap: 30px; 
+        }
+        &__img{
+            width: 100px;
+            height: unset;
+        }
+        &__text{
+            margin-left: 15px;
+        }
+        &__item{
+            &__title{
+                font-size: 1.2vw;
+            }
+            &__desc{
+                font-size: 1vw;
+                margin-top: 0;
+            }
+        }
+    }
+    .add{
+        &__btn{
+            height: 55px;
+            padding: 20px 20px 20px 20px;
+            min-width: 200px
+        }
+        &__desc{
+            margin-right: unset;
+        }
+    }
+    .cameras{
+        &__item{
+            margin: 15px 0;
+            &__title{
+                font-size: 3vw;
+                .span__first, .span__second{
+                    font-size: 3vw;
+                }
+            }
+            &__attributes{
+                margin-top: 20px;
+                &__title{
+                    font-size: 1.2vw;
+                }
+                &__desc{
+                    font-size: 1.1vw;
+                }
+            }
+        }
+    }
+    .footer{
+        &__form{
+            grid-template: repeat(2,minmax(41px,auto))/repeat(3, 1fr);
+            column-gap: 10px;
+            label.error{
+                font-size: 1.1vw;
+            }
+        }
+        &__input{
+            input{
+                font-size: 1.2vw;
+            }
+        }
+        &__btn{
+            font-size: 1.3vw;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header{
+        &__logo{
+            width: 85px;
+        }
+        &__btn{
+            width: 13px;
+            line-height: 11px;
+        }
+    }
+    .steps{
+        &__wrapper{
+            @include flex-direction(column);
+            @include ai(center);
+            margin-top: 30px;
+        }
+        &__item{
+            padding: 125px 12px 61px 12px;
+            width: 232px;
+            margin-top: 13px;
+            min-height: 276px;
+            &__number{
+                font-size: 4vw;
+            }
+            &__title{
+                font-size: 2vw;
+            }
+            &__desc{
+                font-size: 1.8vw;
+            }
+        }
+        &__info{
+            font-size: 1.2vw;
+            margin-top: 20px;
+        }
+    }
+    .problems{
+        &__wrapper{
+            grid-template: repeat(4, auto) / auto;
+        }
+        &__item{
+            &__desc{
+                font-size: 1.8vw;
+            }
+            &__title{
+                font-size: 2vw;
+            }
+        }
+    }
+    .add{
+        padding: 40px 0;
+        &__btn{
+            font-size: 1vw;
+        }
+    }
+    .cameras{
+        &__item{
+            &__title{
+                font-size: 3.5vw;
+                .span__first, .span__second{
+                    font-size: 3.5vw;
+                }
+            }
+            &__attributes{
+                margin-top: 20px;
+                &__title{
+                    font-size: 1.6vw;
+                }
+                &__desc{
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+    .footer{
+        &__form{
+            label.error{
+                font-size: 1.1vw;
+            }
+        }
+        &__input{
+            input{
+                font-size: 1.4vw;
+            }
+        }
+        &__btn{
+            font-size: 1.5vw;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        height: 50px;
+        &__logo{
+            width: 140px;
+        }
+        &__btn{
+            width: 25px;
+            line-height: 20px;
+            font-size: 10px;
+        }
+        &__desc{
+            font-size: 8px;
+            display: none;
+        }
+        &__divider{
+            height: 45px;
+        }
+    }
+    .promo{
+        background: url('../img/mobile_bg.jpg') center center/cover no-repeat;
+        height: 1204px;
+        &__btn{
+            font-size: 12px;
+            display: none;
+        }
+        &__desc{
+            display: block;
+        }
+    }
+    .title{
+        font-size: 28px;
+    }
+    .steps{
+        padding: 40px 0;
+        &__item{
+            &__img{
+                transform: rotate(90deg);
+            }
+            &__title{
+                font-size: 16px;
+            }
+            &__desc{
+                font-size: 16px;
+            }
+            &__number{
+                font-size: 46px;
+                width: 109px;
+                height: 64px;
+            }
+        }
+        &__info{
+            font-size: 10px;
+            text-align: left;
+        }
+    }
+    .problems{
+        &__item{
+            &__title{
+                font-size: 16px;
+            }
+            &__desc{
+                font-size: 12px;
+            }
+        }
+        &__text{
+            margin-left: 20px;
+        }
+    }
+    .add{
+        &__wrapper{
+            @include flex-direction(column);
+        }
+        &__desc{
+            text-align: center;
+            line-height: 16px;
+            font-size: 16px;
+        }
+        &__btn{
+            margin-top: 30px;
+            height: 50px;
+            padding: 10px;
+            font-size: 12px;
+            box-shadow: 0px 4px 1px #00467d;
+        }
+    }
+    .cameras{
+        &__item{
+            &__title{
+                font-size: 28px;
+                .span__first, .span__second{
+                    font-size: 28px;
+                }
+            }
+            &__attributes{
+                margin-top: 20px;
+                width: 350px;
+                min-height: 300px;
+                &__title{
+                    font-size: 10px;
+                }
+                &__desc{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    .footer{
+        padding: 40px 0;
+        &__form{
+            grid-template: repeat(4,minmax(41px,auto))/repeat(1, 1fr);
+            row-gap: 20px;
+            justify-items: center;
+            margin-top: 40px;
+            label.error{
+                font-size: 11px;
+                top: -15px;
+            }
+        }
+        &__input{
+            input{
+                font-size: 12px;
+                width: 300px;
+            }
+        }
+        &__btn{
+            font-size: 10px;
+            grid-column: unset;
+            margin-top: 15px;
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header{
+        &__logo{
+            width: 140px;
+        }
+        &__desc{
+            font-size: 5px;
+        }
+        &__divider{
+            width: 1px;
+        }
+        &__btn{
+            width: 20px;
+            line-height: 15px;
+        }
+    }
+    .promo{
+        height: 600px;
+        background: url('../img/mobile_bg.jpg') center center/cover no-repeat;
+        &__btn{
+            width: 170px;
+            top: 280px;
+            left: 10px;
+            height: 45px;
+            font-size: 10px;
+        }
+        &__desc{
+            font-size: 7px;
+            padding-top: 18px;
+            text-align: center;
+        }
+    }
+    .title{
+        font-size: 6vw;
+    }
+    .steps{
+        &__item{
+            &__number{
+                font-size: 30px;
+            }
+            &__title{
+                font-size: 15px;
+            }
+            &__desc{
+                font-size: 14px;
+            }
+        }
+        &__info{
+            font-size: 8px;
+            margin-top: 10px;
+        }
+    }
+    .problems{
+        padding: 40px 0 40px 0;
+        &__img{
+            width: 80px;
+        }
+        &__text{
+            margin-left: 0;
+            margin-top: 15px;
+        }
+        &__item{
+            @include flex-direction(column);
+            &__title{
+                font-size: 10px;
+            }
+        }
+    }
+    .add{
+        &__wrapper{
+            @include flex-direction(column);
+        }
+        &__btn{
+            margin-top: 10px;
+        }
+    }
+    .cameras{
+        padding: 40px 0;
+        &__item{
+            &__img{
+                width: 120px;
+            }
+            &__title{
+                font-size: 28px;
+                .span__first, .span__second{
+                    font-size: 28px;
+                }
+            }
+            &__attributes{
+                margin-top: 20px;
+                width: 250px;
+                padding: 20px;
+                min-height: 200px;
+                &__title{
+                    font-size: 10px;
+                }
+                &__desc{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    .footer{
+        &__input{
+            input{
+                width: 260px;
+            }
+        }
+        &__btn{
+            width: 170px;
+        }
+    }
+}

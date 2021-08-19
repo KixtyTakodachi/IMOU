@@ -27,4 +27,11 @@ $(document).ready(function(){
     }
     validateForms('#footer_form');
     $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    if(window.innerWidth <= 768) {
+        $('.cameras__item__attributes').slick({
+            arrows: false,
+            dots: true
+        });
+    }
 });

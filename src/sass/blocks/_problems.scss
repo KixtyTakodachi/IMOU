@@ -1,12 +1,13 @@
-.problems{
-    background: linear-gradient(0deg, rgba(0,59,110,1) 0%, rgba(0,112,186,1) 100%);
+.problems {
+    background: linear-gradient(0deg, rgba(0, 59, 110, 1) 0%, rgba(0, 112, 186, 1) 100%);
     padding: 46px 0 72px 0;
-    &__title{
+
+    &__title {
         font-family: "Proxima Nova Semibold";
-        font-size: 36px;
         color: #fff;
     }
-    &__wrapper{
+
+    &__wrapper {
         margin-top: 74px;
         display: grid;
         grid-template: repeat(2, minmax(124px, auto)) / repeat(2, 430px);
@@ -15,28 +16,33 @@
         row-gap: 80px;
         justify-content: center;
     }
-    &__item{
-        display: flex;
-        align-items: center;
-        &__title{
+
+    &__item {
+        @include f;
+        @include ai(center);
+
+        &__title {
             font-family: "Proxima Nova Semibold";
-            font-size: 16px;
             text-transform: uppercase;
             color: #fff;
             line-height: 20px;
+            font-size: 0.9vw;
         }
-        &__desc{
+
+        &__desc {
+            font-size: 0.6vw;
             margin-top: 12px;
-            font-size: 12px;
             color: #fff;
             line-height: 15px;
         }
     }
-    &__img{
+
+    &__img {
         width: 124px;
         height: 124px;
     }
-    &__text{
+
+    &__text {
         margin-left: 35px;
     }
 }
